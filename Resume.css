@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Header Styles */
+.resume-header {
+    background-color:#00BFEE;
+    color: #000000;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.resume-header p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.resume-header a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.resume-header a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.resume-section {
+    background-color: #000000;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.732);
+    color: #00BFEE;
+}
+
+.resume-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color:#00BFEE;
+}
+.resume-section a{
+    color: #00BFEE;
+}
+
+/* Skills Styles */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color:#000000;
+    color:#00BFEE;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-left: 4px solid #55bad4;
+    border: 1px solid#00BFEE;
+}
+
+/* Experience and Education Styles */
+.experience-item, .education-item {
+    margin-bottom: 2rem;
+}
+
+.experience-item h3, .education-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.experience-item ul, .education-item p {
+    margin-left: 1rem;
+}
+
+/* Footer Styles */
+.resume-footer {
+    background-color: #00BFEE;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.resume-footer p {
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .resume-header h1 {
+        font-size: 2rem;
+    }
+
+    .resume-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .resume-header p, .resume-header a {
+        font-size: 1rem;
+    }
+}

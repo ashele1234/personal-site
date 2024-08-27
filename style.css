@@ -1,0 +1,193 @@
+/*{* General styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.Main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+}
+
+.sub-header{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.sub-header .logo img {
+        position: relative;
+        float: left;
+        width:  80px;
+        height: 80px;
+        background-position: 50% 50%;
+        background-repeat:   no-repeat;
+        background-size:     cover;
+    }
+    
+
+.sub-header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.sub-header nav a {
+    color: #00BFEE;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 40px;
+}
+
+.sub-header .resume-btn {
+    background-color:#00BFEE;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 5rem 0;
+    margin-top: 80px;
+    background-image: url(./assets/images/sb-blog-programming-768x314.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    height: 40vh;
+    background-color: #000000;
+}
+section.about{
+    gap: 20px;
+}
+ section.about img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-top:20px ;
+}
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color:#00BFEE;
+ 
+}
+section .passionate{
+    font-size: 1rem;
+    color:#000000;
+}
+ 
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill {
+    flex: 1 1 30%;
+    margin: 1rem;
+    background-color:#00BFEE;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.476) 5px 5px 5px 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color:#00BFEE;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.contact-p{
+    color: #00BFEE;
+}
+
+footer {
+    background-color: #000;
+    color:#00BFEE;
+    padding: 1rem 0;
+    text-align: center;
+    border-top:1px solid #f4f4f4 ;
+}
+
+@media (max-width: 768px) {
+    .skills-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav a {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+  section{
+    height: 100%;
+  }
+ .about{
+    gap:10px;
+ }
+  footer {
+   margin-bottom: 50px;
+}
+.menu-btn {
+    display: block;
+}
+}
